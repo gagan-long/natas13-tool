@@ -1,0 +1,32 @@
+# Natas13 Exploit Toolkit
+
+This Python toolkit automates the exploitation of the **Natas13** level from the [OverTheWire Natas wargame](http://overthewire.org/wargames/natas/).  
+It bypasses the file upload filter by submitting a GIF file containing embedded PHP code, allowing you to retrieve the password for Natas14.
+
+---
+
+## Features
+
+- Authenticates using credentials from a config file
+- Generates a valid GIF file with a PHP payload
+- Uploads the payload and locates the uploaded file URL automatically
+- Executes the payload to print the Natas14 password
+- Includes connection testing and Docker support
+
+---
+
+## Prerequisites
+
+- Python 3.6 or newer
+- The following Python packages:
+  - `requests`
+  - `beautifulsoup4`
+  - `configparser`
+
+Install dependencies with:
+
+pip install -r requirements.txt
+
+## RUN IT 
+
+python natas13_solver.py
